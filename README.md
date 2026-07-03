@@ -79,8 +79,8 @@ lib/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/sawairatanveer10/food-rescue-pakistan
-cd food-rescue-pakistan
+git clone https://github.com/sawairatanveer10/naiki_app.git
+cd naiki_app
 ```
 
 2. Install dependencies:
