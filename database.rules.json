@@ -1,0 +1,24 @@
+{
+  "rules": {
+    "otp_requests": {
+      ".read": false,
+      ".write": "!data.exists() || root.child('otp_requests').child($key).exists()",
+      "$phone": {
+        ".read": false,
+        ".write": true
+      }
+    },
+    "users": {
+      ".read": true,
+      "$phoneKey": {
+        ".write": "!data.exists() || auth != null"
+      }
+    },
+    "donations": {
+      ".read": "auth != null",
+      "$donationId": {
+        ".write": "auth != null && (!data.exists() ? newData.child('donorId').val() === auth.uid : ((data.child('donorId').val() === auth.uid) || (data.child('status').val() === 'available' && newData.child('status').val() === 'claimed_by_ngo' && newData.child('claimedBy').val() === auth.uid)))"
+      }
+    }
+  }
+}

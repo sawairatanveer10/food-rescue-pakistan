@@ -1,0 +1,25 @@
+{
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "naiki-app-pk",
+          "appId": "1:785808926393:android:20590355e67f0f01a79d68",
+          "fileOutput": "android/app/google-services.json"
+        }
+      }
+    },
+    "dart": {
+      "lib/firebase_options.dart": {
+        "projectId": "naiki-app-pk",
+        "configurations": {
+          "android": "1:785808926393:android:20590355e67f0f01a79d68",
+          "ios": "1:785808926393:ios:c0005019ee6b8c8ba79d68"
+        }
+      }
+    }
+  }
+}}
