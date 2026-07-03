@@ -80,7 +80,7 @@ lib/
 
 ```bash
 git clone https://github.com/sawairatanveer10/food-rescue-pakistan
-cd naiki_app
+cd food-rescue-pakistan
 ```
 
 2. Install dependencies:
