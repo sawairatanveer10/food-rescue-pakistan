@@ -79,7 +79,7 @@ lib/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/naiki_app.git
+git clone https://github.com/sawairatanveer10/food-rescue-pakistan
 cd naiki_app
 ```
 
